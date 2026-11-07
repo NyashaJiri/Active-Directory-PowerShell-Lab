@@ -135,6 +135,14 @@ A Windows Server 2022 and Windows 11 lab built in VMware Workstation to practice
 
 *Active Directory Users and Computers shows the created organizational units and user accounts.*
 
+### Downloads
+
+- [Download the PowerShell script](https://github.com/NyashaJiri/Active-Directory-PowerShell-Lab/raw/refs/heads/main/100%20Bulk%20Users%20Script.ps1)
+- [Download the user spreadsheet (CSV)](https://github.com/NyashaJiri/Active-Directory-PowerShell-Lab/raw/refs/heads/main/users_spreadsheet.csv)
+
+Save both files in the same folder before running the script.
+
+
 ## 6. Windows 11 Domain Join
 
 ### Step 1. Join the Windows 11 client to vortex.local.
@@ -158,5 +166,7 @@ A Windows Server 2022 and Windows 11 lab built in VMware Workstation to practice
 ## Reference
 
 [TechGneek's Active Directory and PowerShell Automation Lab](https://github.com/techgneek/Active-Directory-and-Powershell-Automation) provided the README structure.
+
+
 
 
