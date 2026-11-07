@@ -39,7 +39,7 @@ A Windows Server 2022 and Windows 11 lab built in VMware Workstation to practice
 
 ## 2. Network Adapter Setup
 
-### Step 1. Configure the internet-facing adapter.
+### Step 1. Internet-facing adapter.
 
 ![The server's internet-facing adapter settings are shown.](phase-2/part-2-step-1.png)
 
