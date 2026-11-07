@@ -8,10 +8,10 @@ The main goal is to demonstrate how **automation and centralized administration 
 
 ## Network Topology
 
-- **Domain controller** — Windows Server 2022
-- **Client** — Windows 11
-- **Internal network** — `10.0.0.0/24`
-- **Active Directory domain** — `vortex.local`
+- **Domain controller** => Windows Server 2022
+- **Client** => Windows 11
+- **Internal network** => `10.0.0.0/24`
+- **Active Directory domain** => `vortex.local`
 
 ## Project Objectives
 
