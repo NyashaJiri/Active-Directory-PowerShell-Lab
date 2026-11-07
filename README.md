@@ -24,7 +24,7 @@ The main goal is to demonstrate how **automation and centralized administration 
 
 ## 1. Windows Server and Active Directory Setup
 
-### Step 1. Plan the lab topology.
+### Step 1. The lab topology.
 
 ![the Windows Server 2022 VM, Windows 11 client, and separate internet and internal network connections.](phase-1/lab-topology.png)
 
@@ -44,7 +44,7 @@ The main goal is to demonstrate how **automation and centralized administration 
 
 ## 2. Network Adapter Setup
 
-### Step 1. Configure the internet-facing adapter.
+### Step 1. Internet-facing adapter.
 
 ![the server's internet-facing adapter settings.](phase-2/part-2-step-1.png)
 
