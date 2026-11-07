@@ -19,91 +19,144 @@ A Windows Server 2022 and Windows 11 lab built in VMware Workstation to practice
 
 ## 1. Windows Server and Active Directory Setup
 
-1. Map out the lab with a Windows Server VM, a Windows 11 client, and separate internet and internal network adapters on the server.
-2. In Server Manager, select **Active Directory Domain Services**, **DHCP Server**, and **Remote Access**.
-3. In the AD DS Configuration Wizard, choose **Add a new forest** and enter `vortex.local` as the root domain.
+### Step 1. Plan the lab topology.
 
-### Visual Guide
+![The diagram shows the Windows Server 2022 VM, Windows 11 client, and separate internet and internal network adapters.](lab-topology.png)
 
-![VMware lab topology with a Windows Server domain controller and Windows 11 client](lab-topology.png)
+*The diagram shows the Windows Server 2022 VM, Windows 11 client, and separate internet and internal network adapters.*
 
-<table>
-  <tr>
-    <td><img src="server-roles.png" alt="Server Manager showing AD DS, DHCP Server, and Remote Access selected" width="450"></td>
-    <td><img src="new-forest.png" alt="AD DS Configuration Wizard with vortex.local entered as the root domain" width="450"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Server role selection</b></td>
-    <td align="center"><b>New forest configuration</b></td>
-  </tr>
-</table>
+### Step 2. Select the server roles in Server Manager.
 
+![Active Directory Domain Services, DHCP Server, and Remote Access are selected.](server-roles.png)
+
+*Active Directory Domain Services, DHCP Server, and Remote Access are selected.*
+
+### Step 3. Start a new forest in the AD DS Configuration Wizard.
+
+![The wizard shows vortex.local entered as the root domain.](new-forest.png)
+
+*The wizard shows vortex.local entered as the root domain.*
 
 ## 2. Network Adapter Setup
 
-Configured the internet-facing adapter and verified connectivity from the server. Added a second adapter on the VMware LAN segment and configured its internal address.
+### Step 1. Configure the internet-facing adapter.
 
-![Internet NIC configuration](part-2-step-1.png)
+![The server's internet-facing adapter settings are shown.](part-2-step-1.png)
 
-![Success Internet ping test on DC Server](part-2-step-2.png)
+*The server's internet-facing adapter settings are shown.*
 
-![LAN Segment created successfully](part-2-step-7.png)
+### Step 2. Test internet connectivity from the server.
 
-![Internal NIC Configuration](part-2-step-8.png)
+![Successful ping replies confirm the server can reach the test destination.](part-2-step-2.png)
 
-![NIC (Internal) & NIC (Internet) Created](part-2-step-9.png)
+*Successful ping replies confirm the server can reach the test destination.*
 
+### Step 3. Create a VMware LAN segment for the internal network.
 
+![The LAN segment appears in VMware's list.](part-2-step-7.png)
+
+*The LAN segment appears in VMware's list.*
+
+### Step 4. Configure the internal adapter.
+
+![The adapter uses 10.0.0.1 on the internal subnet, with the gateway field left blank.](part-2-step-8.png)
+
+*The adapter uses 10.0.0.1 on the internal subnet, with the gateway field left blank.*
+
+### Step 5. Verify both adapters in Windows.
+
+![Windows lists the Internal and Internet adapters separately.](part-2-step-9.png)
+
+*Windows lists the Internal and Internet adapters separately.*
 
 ## 3. DHCP Server Setup
 
-Created a DHCP scope, set its address range and three-day lease, configured the router option, and authorized the DHCP server.
+### Step 1. Create and name the DHCP scope.
 
-![Naming DHCP Scope](part-3-step-1.png)
+![The wizard shows the name assigned to the new scope.](part-3-step-1.png)
 
-![Setting Up IP Address Range](part-3-step-2.png)
+*The wizard shows the name assigned to the new scope.*
 
-![IP Address Lease Duration set to 3days](part-3-step-3.png)
+### Step 2. Set the scope's address range.
 
-![Router Gateway Setup](part-3-step-4.png)
+![This screen defines the range available for client leases.](part-3-step-2.png)
 
-![Authorize DHCP Server](part-3-step-5.png)
+*This screen defines the range available for client leases.*
 
+### Step 3. Set the lease duration to three days.
 
+![The DHCP wizard shows a three-day lease duration.](part-3-step-3.png)
+
+*The DHCP wizard shows a three-day lease duration.*
+
+### Step 4. Set the router option for clients.
+
+![Clients receive 10.0.0.1 as their default gateway.](part-3-step-4.png)
+
+*Clients receive 10.0.0.1 as their default gateway.*
+
+### Step 5. Authorize the DHCP server in Active Directory.
+
+![The DHCP console shows the authorization step.](part-3-step-5.png)
+
+*The DHCP console shows the authorization step.*
 
 ## 4. Routing and NAT
 
-Enabled Routing and Remote Access, selected NAT, and assigned the internet-facing adapter as the external interface.
+### Step 1. Open the Routing and Remote Access setup wizard.
 
-![Enable RAS](part-4-step-1.png)
+![The server is selected for Routing and Remote Access configuration.](part-4-step-1.png)
 
-![Select Nat](part-4-step-2.png)
+*The server is selected for Routing and Remote Access configuration.*
 
-![Select Internet NIC](part-4-step-3.png)
+### Step 2. Choose Network Address Translation (NAT).
 
+![The wizard shows NAT selected for the lab.](part-4-step-2.png)
 
+*The wizard shows NAT selected for the lab.*
+
+### Step 3. Select the internet-facing adapter.
+
+![The Internet adapter is selected as the external NAT interface.](part-4-step-3.png)
+
+*The Internet adapter is selected as the external NAT interface.*
 
 ## 5. Bulk User Provisioning with PowerShell
 
-Ran a PowerShell script to import users from a CSV and organize them into department OUs. Checked the import log and verified the created OUs and accounts in Active Directory Users and Computers.
+### Step 1. Open and run the import script with the user CSV beside it.
 
-![Click Green Icon To Run Script](part-5-step-4.png)
+![PowerShell ISE shows the Run Script button used to start the import.](part-5-step-4.png)
 
-![Verifed Created Ous & Users](part-5-step-6.png)
+*PowerShell ISE shows the Run Script button used to start the import.*
 
+### Step 2. Check the import log, then verify accounts in Active Directory Users and Computers.
 
+![Active Directory Users and Computers shows the created organizational units and user accounts.](part-5-step-6.png)
+
+*Active Directory Users and Computers shows the created organizational units and user accounts.*
 
 ## 6. Windows 11 Domain Join
 
-Joined the Windows 11 client to vortex.local, signed in with a domain account, and verified that the client received a DHCP lease.
+### Step 1. Join the Windows 11 client to vortex.local.
 
-![Domain Joined Successfully](part-6-step-6.png)
+![Windows confirms the computer joined the domain.](part-6-step-6.png)
 
-![User Successfully Logged Onto Domain](part-6-step-8.png)
+*Windows confirms the computer joined the domain.*
 
-![Client PC Leased IP](part-6-step-9.png)
+### Step 2. Sign in with a domain account.
+
+![The Windows client shows a successful domain user sign-in.](part-6-step-8.png)
+
+*The Windows client shows a successful domain user sign-in.*
+
+### Step 3. Verify the client received a DHCP lease.
+
+![The DHCP console lists the address leased to the client.](part-6-step-9.png)
+
+*The DHCP console lists the address leased to the client.*
 
 ## Reference
 
 [TechGneek's Active Directory and PowerShell Automation Lab](https://github.com/techgneek/Active-Directory-and-Powershell-Automation) provided the README structure.
+
 
