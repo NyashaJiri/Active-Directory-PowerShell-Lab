@@ -55,7 +55,7 @@ A Windows Server 2022 and Windows 11 lab built in VMware Workstation to practice
 
 ![The LAN segment appears in VMware's list.](phase-2/part-2-step-7.png)
 
-*The LAN segment appears in VMware's list.*
+*The LAN segment selected.*
 
 ### Step 4. Configure the internal adapter.
 
