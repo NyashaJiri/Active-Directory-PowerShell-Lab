@@ -123,7 +123,7 @@ A Windows Server 2022 and Windows 11 lab built in VMware Workstation to practice
 
 ## 5. Bulk User Provisioning with PowerShell
 
-### Step 1. Open and run the import script with the user CSV beside it.
+### Step 1. Open and run the import script with the user CSV in the same folder.
 
 ![PowerShell ISE shows the Run Script button used to start the import.](phase-5/part-5-step-4.png)
 
