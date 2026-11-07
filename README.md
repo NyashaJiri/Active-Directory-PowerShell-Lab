@@ -67,7 +67,7 @@ A Windows Server 2022 and Windows 11 lab built in VMware Workstation to practice
 
 ![Windows lists the Internal and Internet adapters separately.](phase-2/part-2-step-9.png)
 
-*Windows lists the Internal and Internet adapters separately.*
+*The Internal and Internet adapters.*
 
 ## 3. DHCP Server Setup
 
