@@ -26,7 +26,7 @@ The main goal is to demonstrate how **automation and centralized administration 
 
 ## 📺 Watch the Video:
 
-[![Active Directory lab video preview](phase-1/lab-topology.png)](https://youtu.be/DFqT5ZYG2TI)
+[![Active Directory lab video preview](ad-video-thumbnail.jpg)](https://youtu.be/DFqT5ZYG2TI)
 
 - **In this video, I walk through the full Active Directory and PowerShell lab setup.**
 
