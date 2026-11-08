@@ -253,14 +253,6 @@ Save both files in the same folder before running the script.
 *Screenshot shows the client address lease listed in the DHCP console.*
 
 
-## 7. Future Lab Improvements
-
-1. **Implement Group Policy (GPOs)** to enforce security settings across different OUs.
-2. **Configure Role-Based Access Control (RBAC)** using security groups and NTFS permissions.
-3. **Expand PowerShell automation** for user onboarding, offboarding, and account management.
-4. **Integrate Microsoft Entra Connect Sync (Azure AD Connect)** to synchronize on-premises Active Directory users with Microsoft Entra ID.
-5. **Implement backup and recovery procedures** to protect Active Directory and restore deleted user accounts.
-
 ## Project Outcomes & Key Achievements
 
 - **Automated User Provisioning** – Used PowerShell to create Active Directory users and organizational units (OUs), reducing the need for manual account creation.
