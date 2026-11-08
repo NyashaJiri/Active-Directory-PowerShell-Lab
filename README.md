@@ -22,9 +22,11 @@ The main goal is to demonstrate how **automation and centralized administration 
 - Join a **Windows 11 machine to the domain**.
 - Authenticate users and verify **network connectivity**.
 
+# Active Directory Deployment & PowerShell Automation 🚀
+
 ## 📺 Watch the Video:
 
-[![Active Directory Lab Play Button](https://i.ytimg.com/vi/DFqT5ZYG2TI/hqdefault.jpg)](https://youtu.be/DFqT5ZYG2TI)
+[![Active Directory lab video preview](phase-1/lab-topology.png)](https://youtu.be/DFqT5ZYG2TI)
 
 - **In this video, I walk through the full Active Directory and PowerShell lab setup.**
 
