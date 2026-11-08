@@ -26,7 +26,7 @@ The main goal is to demonstrate how **automation and centralized administration 
 
 ## 📺 Watch the Video:
 
-[Watch the Active Directory lab video](https://youtu.be/DFqT5ZYG2TI)
+[![Active Directory lab video thumbnail](ad-final-thumbnail.jpg)](https://youtu.be/DFqT5ZYG2TI)
 
 - **In this video, I walk through the full Active Directory and PowerShell lab setup.**
 
@@ -273,6 +273,8 @@ Extract both files to the same folder before running the script.
 - Expand PowerShell automation for user onboarding and offboarding.
 - Integrate Microsoft Entra Connect Sync to synchronize on-premises AD with Microsoft Entra ID.
 - Configure Active Directory backup and recovery procedures.
+
+---
 
 This lab is one of the hands-on projects I've completed to develop and demonstrate my skills in Active Directory and Windows Server administration.
 
