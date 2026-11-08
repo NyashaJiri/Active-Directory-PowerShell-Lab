@@ -22,7 +22,7 @@ The main goal is to demonstrate how **automation and centralized administration 
 - Join a **Windows 11 machine to the domain**.
 - Authenticate users and verify **network connectivity**.
 
-# Active Directory Deployment & PowerShell Automation 🚀
+# Active Directory Deployment & PowerShell Automation
 
 ## 📺 Watch the Video:
 
