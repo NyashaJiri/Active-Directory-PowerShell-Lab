@@ -22,6 +22,12 @@ The main goal is to demonstrate how **automation and centralized administration 
 - Join a **Windows 11 machine to the domain**.
 - Authenticate users and verify **network connectivity**.
 
+## 📺 Watch the Video:
+
+[![Active Directory Lab Play Button](https://i.ytimg.com/vi/DFqT5ZYG2TI/hqdefault.jpg)](https://youtu.be/DFqT5ZYG2TI)
+
+- **In this video, I walk through the full Active Directory and PowerShell lab setup.**
+
 ## 1. Windows Server and Active Directory Setup
 
 ### Step 1. The lab topology.
@@ -152,6 +158,12 @@ The main goal is to demonstrate how **automation and centralized administration 
 
 ## 5. Bulk User Provisioning with PowerShell
 
+### Downloads
+
+- [Download the PowerShell script and CSV (ZIP)](phase-5/100%20Bulk%20Users%20Script%20%26%20CSV%20File.zip)
+
+Extract both files to the same folder before running the script.
+
 ### Step 1. Prepare the user spreadsheet.
 
 ![the user spreadsheet with usernames, OUs, and account attributes.](phase-5/part-5-step-1.png)
@@ -187,14 +199,6 @@ The main goal is to demonstrate how **automation and centralized administration 
 ![the created organizational units and user accounts in Active Directory Users and Computers.](phase-5/part-5-step-6.png)
 
 *Screenshot shows the created organizational units and user accounts in Active Directory Users and Computers.*
-
-### Downloads
-
-- [Download the PowerShell script](https://github.com/NyashaJiri/Active-Directory-PowerShell-Lab/raw/refs/heads/main/phase-5/100%20Bulk%20Users%20Script.ps1)
-- [Download the user spreadsheet (CSV)](https://github.com/NyashaJiri/Active-Directory-PowerShell-Lab/raw/refs/heads/main/phase-5/users_spreadsheet.csv)
-
-Save both files in the same folder before running the script.
-
 
 ## 6. Windows 11 Domain Join
 
@@ -267,3 +271,9 @@ Save both files in the same folder before running the script.
 - Expand PowerShell automation for user onboarding and offboarding.
 - Integrate Microsoft Entra Connect Sync to synchronize on-premises AD with Microsoft Entra ID.
 - Configure Active Directory backup and recovery procedures.
+
+This lab is one of the hands-on projects I've completed to develop and demonstrate my skills in Active Directory and Windows Server administration.
+
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/nyasha-jiri-86a149334/), explore more of my IT projects and tutorials on my [YouTube Channel](https://youtube.com/@pingnyasha), or visit my [Portfolio Website](https://nyashajiri.com/).
+
+**Built, tested, and documented by Nyasha Prince Jiri.**
